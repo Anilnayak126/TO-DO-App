@@ -1,0 +1,21 @@
+
+/todoapp/todoapp/migrations/
+
+
+/todo/
+*.py[cod]
+Pipfile.lock
+Pipfile
+
+/todoapp/static/
+*.DS_Store
+
+
+django realeted //
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+/media/
+*.env

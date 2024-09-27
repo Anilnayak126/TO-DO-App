@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{% static 'css/index.css' %}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Font Awesome 5 Brands:wght@400&display=swap" />
+</head>
+
+<body>
+    <div class="signup-login">
+        <div class="signup-box">
+            <form method="post">
+                {% csrf_token %}
+                <div class="heading">
+                    SignUp
+                </div>
+
+                <div class="line"></div>
+                <div class="field">
+                    <b>Username</b>
+
+                    <input class="inp" type="text" name="fnm" required placeholder="Enter Your Full Name">
+                </div>
+
+
+                <div class="field">
+                    <b>Email</b>
+
+                    <input class="inp" type="email" name="emailid" required placeholder="Enter Your Username">
+                </div>
+
+
+                <div class="field">
+                    <b>Password</b>
+
+                    <input  class="inp" type="password" name="pwd" required placeholder="Enter Password">
+                </div>
+                <div class="field">
+                    <input class="submit-button"type="submit" value="Signup">
+                </div>
+                <div class="line"></div>
+
+                <div class="field">
+                    <b style="margin-left:130px;">Already have an account?</b>
+                    <br>
+                    <a class="anc"href="/loginn">Login</a>
+                </div>
+
+
+
+
+
+            </form>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
